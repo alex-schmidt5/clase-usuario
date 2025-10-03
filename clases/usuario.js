@@ -1,17 +1,24 @@
     export default class Usuario {
+    // Propiedades públicas
     nombre;
     email;
     edad;
-    #pin;
+    #pin = "1234";
 
-    constructor(nombre, email, edad, pin) {
+    constructor(nombre, email, edad) {
         this.nombre = nombre;
         this.email = email;
         this.edad = edad;
-        this.#pin = pin; 
     }
 
-    static crear(nombre, email, edad, pin) {
-        return new Usuario(nombre, email, edad, pin);
+    static crear(nombre, email, edad) {
+        return new Usuario(nombre, email, edad);
+    }
+    cambiarPin(pinActual, pinNuevo) {
+        if (this.#pin === pinActual) {
+        this.#pin = pinNuevo;
+        return true;
+        }
+        return false; 
     }
     }
