@@ -1,5 +1,4 @@
     export default class Usuario {
-    // Propiedades públicas
     nombre;
     email;
     edad;
