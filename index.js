@@ -1,6 +1,7 @@
 import Usuario from "./clases/usuario.js";
 
-const usuarioPrueba = Usuario.crear("Alex", "alex@email.com", 25);
+
+const usuarioPrueba = Usuario.crear("Alex", "alex@gmail.com", 25);
 
 console.log(usuarioPrueba);
 
